@@ -11,7 +11,7 @@ export default async function CreateAccountPage() {
     return (
         <>
             <Link
-                href="/authentication/login"
+                href="/auth/login"
                 className={cn(
                     buttonVariants({ variant: "ghost" }),
                     "absolute right-4 top-4 md:right-8 md:top-8"

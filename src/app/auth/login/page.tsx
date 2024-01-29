@@ -1,9 +1,13 @@
 import { auth } from "@/auth";
-import LoginForm from "@/src/components/auth/login-form"
+import Login from "@/src/components/auth/login"
+import { redirect } from "next/navigation";
 
 export default async function LoginPage() {
-    //const session = await auth();
-    //console.log(session)
+    const session = await auth();
+    if (session) {
+        redirect('/');
+    }
+
     return (
         <div className="lg:p-8">
             <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
@@ -15,7 +19,7 @@ export default async function LoginPage() {
                         Login to your account to continue
                     </p>
                 </div>
-                <LoginForm />
+                <Login />
             </div>
         </div>
     )
