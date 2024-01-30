@@ -7,7 +7,7 @@ import { Icons } from "@/src/components/ui/icons";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { magicLinkFormSchema, magicLinkFormType } from "@/src/lib/schemas/magiclink-form-schema";
-import { loginMagicLink } from "@/src/lib/actions/login-magiclink-action";
+import { loginMagicLink } from "@/src/lib/actions/auth/login-magiclink-action";
 import { useSearchParams } from 'next/navigation'
 
 export default function MagicLinkForm() {

@@ -2,7 +2,7 @@
 
 import { Button } from "@/src/components/ui/button";
 import { Icons } from "@/src/components/ui/icons";
-import { loginOidc } from "@/src/lib/actions/login-oidc-action";
+import { loginOidc } from "@/src/lib/actions/auth/login-oidc-action";
 import { useSearchParams } from "next/navigation";
 import { useFormStatus } from "react-dom";
 
